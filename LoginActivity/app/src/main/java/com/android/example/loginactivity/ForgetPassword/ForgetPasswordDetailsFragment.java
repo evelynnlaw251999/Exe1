@@ -38,7 +38,7 @@ public class ForgetPasswordDetailsFragment extends Fragment {
         buttonChangePW = view.findViewById(R.id.button_change_password);
         newPassword = view.findViewById(R.id.edittext_newpassword);
         welcomeUser = view.findViewById(R.id.welcomeUser);
-        welcomeUser.setText("Hello " + userName);
+        welcomeUser.setText("Hello, " + userName +" !");
 
         buttonChangePW.setOnClickListener(new View.OnClickListener() {
             @Override

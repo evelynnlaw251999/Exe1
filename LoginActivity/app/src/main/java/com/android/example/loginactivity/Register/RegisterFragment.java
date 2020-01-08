@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,9 +29,10 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
     EditText aEmail;
     EditText aTextUsername;
     EditText aTextPassword;
-    EditText aTextCfmPassword;
     Button aButtonRegister;
     TextView aLoginNow;
+    CheckBox showPassword;
+
 
     public RegisterFragment() {
 
@@ -49,7 +51,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
         aEmail = view.findViewById(R.id.edittext_email);
         aTextUsername = view.findViewById(R.id.edittext_username);
         aTextPassword = view.findViewById(R.id.edittext_password);
-        aTextCfmPassword = view.findViewById(R.id.edittext_retype_password);
+
 
         aButtonRegister = view.findViewById(R.id.button_register);
 
@@ -58,6 +60,8 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
 
                // LoginFragment loginFragment = new LoginFragment();
                 //getFragmentManager().beginTransaction().replace(getId(), loginFragment).commit();
+
+
 
 
         registerViewModel = ViewModelProviders.of(this).get(RegisterViewModel.class);
