@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LoginActivity</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="first_name">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="register">Register</string>
+    <string name="reset_password">Reset Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_now">Login Now</string>
+</resources>

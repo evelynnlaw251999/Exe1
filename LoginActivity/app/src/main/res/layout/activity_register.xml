@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Register.RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/register"
+    android:id="@+id/secondLayout">
+
+
+
+
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="58dp"
+        android:text="How to use your leisure time is"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginRight="55dp"
+        android:text="the biggest problem for everyone !!!"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/edittext_firstname"
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif-thin"
+            android:paddingLeft="20dp"
+            android:hint="@string/first_name"
+            android:maxLength="10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/edittext_lastname"
+            android:layout_width="144dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/border"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginLeft="35dp"
+            android:hint="@string/lastname"
+            android:maxLength="10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/email"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/email"
+        android:paddingLeft="20dp"
+        android:singleLine="false"
+        android:textColor="@android:color/white"
+        android:textColorHint="#EBEFF1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:maxLength="35"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/username"
+        android:textColor="@android:color/white"
+        android:textColorHint="#EBEFF1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:maxLength="20"
+        android:inputType="text"/>
+
+
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:hint="@string/password"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@android:color/white"
+        android:textColorHint="#EBEFF1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        />
+
+
+    <EditText
+        android:id="@+id/edittext_retype_password"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/retype_password"
+        android:textColor="@android:color/white"
+        android:textColorHint="#EBEFF1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:maxLength="10"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/registerbtn"
+        android:textColor="@android:color/white"
+        android:text="@string/register" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Already Have An Account?"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/login_now"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="@string/login_now"
+        />
+
+
+</LinearLayout>
